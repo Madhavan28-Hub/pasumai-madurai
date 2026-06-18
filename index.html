@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasumai Madurai - பசுமை மதுரை | Waste Segregation Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-section">
+                <div class="logo">♻️</div>
+                <div class="title-section">
+                    <h1>Pasumai Madurai</h1>
+                    <p class="subtitle">பசுமை மதுரை - Sustainable Madurai</p>
+                </div>
+            </div>
+            <div class="partnership-badges">
+                <span class="badge">1M1B Virtual Internship</span>
+                <span class="badge">IBM SkillsBuild</span>
+                <span class="badge">AICTE</span>
+            </div>
+        </header>
+
+        <!-- Info Banner -->
+        <div class="info-banner">
+            <p>🌱 <strong>Mission:</strong> Clean waste sorting for Madurai | Supporting UN SDGs 11 & 12</p>
+        </div>
+
+        <!-- Waste Categories Quick Reference -->
+        <div class="categories-section">
+            <h3>Waste Categories (கழிவு வகைகள்)</h3>
+            <div class="category-cards">
+                <div class="category-card green">
+                    <div class="category-icon">🟢</div>
+                    <h4>Green Bin</h4>
+                    <p>மட்கும் குப்பை</p>
+                    <small>Food waste, leaves</small>
+                </div>
+                <div class="category-card blue">
+                    <div class="category-icon">🔵</div>
+                    <h4>Blue Bin</h4>
+                    <p>மட்காத குப்பை</p>
+                    <small>Plastic, paper, metal</small>
+                </div>
+                <div class="category-card red">
+                    <div class="category-icon">🔴</div>
+                    <h4>Hazardous</h4>
+                    <p>ஆபத்தான கழிவுகள்</p>
+                    <small>Medical, sanitary</small>
+                </div>
+                <div class="category-card yellow">
+                    <div class="category-icon">⚡</div>
+                    <h4>E-Waste</h4>
+                    <p>மின்னணுக் கழிவுகள்</p>
+                    <small>Electronics, batteries</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Interface -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Ask About Any Waste Item | எந்த குப்பையையும் கேளுங்கள்</h2>
+                <p>Type the name of any household item to learn how to dispose it properly</p>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome Message -->
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p><strong>வணக்கம்! Welcome to Pasumai Madurai! 🌿</strong></p>
+                        <p>I'm your AI waste segregation assistant. Tell me what item you want to throw away, and I'll guide you on proper disposal!</p>
+                        <p><em>Examples: banana peel, plastic bottle, old phone, medicine strip</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <input 
+                    type="text" 
+                    id="userInput" 
+                    class="chat-input" 
+                    placeholder="Type waste item here... (e.g., plastic cover, vegetable waste)"
+                    autocomplete="off"
+                >
+                <button id="sendButton" class="send-button">
+                    <span>Send</span>
+                    <span class="send-icon">➤</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Quick Examples -->
+        <div class="quick-examples">
+            <p><strong>Quick Examples:</strong></p>
+            <div class="example-chips">
+                <button class="example-chip" data-item="banana peel">🍌 Banana Peel</button>
+                <button class="example-chip" data-item="plastic bottle">🧴 Plastic Bottle</button>
+                <button class="example-chip" data-item="old mobile">📱 Old Mobile</button>
+                <button class="example-chip" data-item="medicine strip">💊 Medicine Strip</button>
+                <button class="example-chip" data-item="newspaper">📰 Newspaper</button>
+                <button class="example-chip" data-item="sanitary pad">🩹 Sanitary Pad</button>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🌍 Supporting UN Sustainable Development Goals 11 & 12</p>
+            <p class="footer-note">Helping Madurai's தூய்மை பணியாளர்கள் (sanitation workers) and protecting our environment</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
